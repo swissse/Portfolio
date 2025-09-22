@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
 @import './reset.css';
 
 /* 
@@ -21,7 +21,7 @@ font-family: "Space Grotesk", sans-serif;
 }
 
 html, body {
-    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
     letter-spacing: -0.5px;
     color: var(--page-text-color);
 }
@@ -112,10 +112,11 @@ html {
     font-size: 40px;
     font-weight: 700;
     line-height: 1.4;
+    text-wrap: balance;
 }
 
 .header__title strong {
-    font-size: 60px;
+    font-size: 52px;
     font-weight: 700;
 }
 
@@ -162,7 +163,7 @@ html {
 /* MAIN */
 
 .main {
-    padding: 60px 0;
+    padding: 30px 0;
     background-color: var(--black);
     color: var(--white);
 }
@@ -175,13 +176,14 @@ html {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 320px;
-    row-gap: 10px;padding-top: 60px;
+    max-width: 520px;
+    row-gap: 10px;
+    padding-top: 60px;
 }
 .tools__h {
     display: flex;
     font-family: "Outfit", sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 32px;
     color: var(--white);
     
@@ -257,7 +259,7 @@ html {
     padding-top: 60px;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 320px;
+    max-width: 520px;
     row-gap: 10px;
 }
 
@@ -295,14 +297,12 @@ html {
     border-radius: 13px;
     max-width: 320px;
     padding: 20px 22px 30px 22px;
-    height: 354px;
     display: flex;
     flex-direction: column;
     background-color: #27272a;
     transform: none;
 }
 .card__h-link {
-    max-width: 230px;
     padding: 15px 0 10px 0;
     display: flex;
     justify-content: space-between;
@@ -320,17 +320,33 @@ html {
     font-family: "Outfit", sans-serif;
 }
 .projects__card__text {
-    max-width: 230px;
     font-size: 16px;
     opacity: 0.7;
+    max-width: 276px;
     text-align: justify;
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+    font-weight: 400;
+    margin: 0 auto;
+    hyphens: auto;
+    word-break: keep-all;
+}
+
+.container__text__content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.br-15 {
+    border-radius: 10px;
 }
 
 .projects__h {
     display: flex;
     padding: 70px 30px 30px 30px;
     font-size: 32px;
-    font-weight: 500;
+    font-weight: 600;
     font-family: "Outfit", sans-serif;
 }
 
@@ -351,7 +367,6 @@ html {
     flex-wrap: wrap;
     gap: 80px;
     justify-content: space-around;
-    align-items: center;
     background-color: #27272A;
     padding: 44px 30px 30px 30px;
     margin: 0 30px;
@@ -395,18 +410,30 @@ html {
 .about__text__content {
     display: flex;
     flex-direction: column;
-    max-width: 470px;
+    max-width: 520px;
     text-align: justify;
-    row-gap: 10px;
+    row-gap: 20px;
 }
 .text__content__h {
     font-size: 42px;
-    font-weight: 500;
+    font-weight: 600;
     font-family: "Outfit", sans-serif;
 }
 .text__content {
-    font-size: 20px;
+    font-size: 18px;
     opacity: 0.7;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+    word-break: keep-all;
+    hyphens: auto;
+    text-align: justify;
+    font-weight: 400;
+}
+
+.container__text__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .about__h {
